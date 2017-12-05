@@ -74,7 +74,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 
 //TODO Put here the name of your currency
 const char     CRYPTONOTE_NAME[]                             = "flytcoin";
-const char GENESIS_COINBASE_TX_HEX[] = "010a01ff0001d68bb7a303029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210145a5cfa9e3e0ec2bf84f8c5e94d011e9271624b6c101a958b1f4c8ce52213329";
+const char GENESIS_COINBASE_TX_HEX[] = "010a01ff0001ffffffffffff01029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121016f0d5f33966403b6e8e8c976bb62c1e4a0eb83676597b97d9bbe0116e64c5acf";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
