@@ -16,7 +16,7 @@ const size_t   CRYPTONOTE_MAX_TX_SIZE                        = 1000000000;
 //TODO Currency-specific address prefix
 const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX       = 1078; // addresses start with "XS"
 //TODO Choose maturity period for your currency
-const size_t   CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 10;
+const size_t   CRYPTONOTE_MINED_MONEY_UNLOCK_WINDOW          = 5;
 const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = 60 * 60 * 2;
 
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
@@ -26,20 +26,20 @@ const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 //TODO or you can define number explicitly UINT64_C(858986905600000000)
 // MONEY_SUPPLY - total number coins to be generated
 const uint64_t MONEY_SUPPLY                                  = UINT64_C(18446744073709551615);
-const unsigned EMISSION_SPEED_FACTOR                         = 21;
+const unsigned EMISSION_SPEED_FACTOR                         = 28;
 static_assert(EMISSION_SPEED_FACTOR <= 8 * sizeof(uint64_t), "Bad EMISSION_SPEED_FACTOR");
 
 //TODO Define number of blocks for block size median calculation
 const size_t   CRYPTONOTE_REWARD_BLOCKS_WINDOW               = 100;
-const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE     = 100000; //size of block (bytes) after which reward for block calculated using block size
+const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE     = 60000; //size of block (bytes) after which reward for block calculated using block size
 const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
 //TODO Define number of digits
 const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 12;
-const uint64_t MINIMUM_FEE                                   = 1000000;    // MINIMUM_FEE
+const uint64_t MINIMUM_FEE                                   = 100000;    // MINIMUM_FEE
 const uint64_t DEFAULT_DUST_THRESHOLD                        = MINIMUM_FEE;    // MINIMUM_FEE
 
 //TODO Define preferred block's target time
-const uint64_t DIFFICULTY_TARGET                             = 120; // seconds
+const uint64_t DIFFICULTY_TARGET                             = 45; // seconds
 const uint64_t EXPECTED_NUMBER_OF_BLOCKS_PER_DAY             = 24 * 60 * 60 / DIFFICULTY_TARGET;
 //TODO There are options to tune CryptoNote's difficulty retargeting function.
 //TODO We recommend not to change it.
